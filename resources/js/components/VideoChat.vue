@@ -5,7 +5,7 @@
       <video class="video-here" ref="video-here" autoplay></video>
       <video class="video-there" ref="video-there" autoplay></video>
       <div class="text-right" v-for="(name, userId) in others" :key="userId">
-        <button @click="startVideoChat(userId)" v-text="`Talk with ${name}`" />
+        <button @click="startVideoChat(userId)" v-text="`Talk with ${name} ${userId}`" />
       </div>
     </div>
   </div>
